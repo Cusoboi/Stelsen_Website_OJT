@@ -1,0 +1,68 @@
+    .container-fluid{
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+        color: black;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+        max-width: 2222px;
+        
+    }
+
+    legend  {
+        margin-top: 40px;
+        font-size: 4ren;
+    }
+
+    .btn{
+        width: 120px;
+        margin-top: 300px;
+    }
+
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-color: #070A52 !important;
+        
+    }
+
+    @media(max-width: 767px){
+        .masthead{
+            min-height: 100vh;
+        }
+        h1{
+            font-size: calc(1.525rem + 3.3vw);
+        }
+        .navbar-collapse {
+            position: fixed;
+            top: 56px;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            overflow-y: auto;
+            background-color: #070A52;
+            padding: 0.5rem;
+        }
+        
+        .navbar-collapse.show {
+            display: block;
+        }
+        
+        .navbar-nav {
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .navbar-nav .nav-item {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .navbar-nav .nav-link {
+            padding: 0.5rem;
+            color: #fff;
+        }
+        
+        .navbar-nav .nav-link.active {
+            background-color: #070A52;
+        }
+        }
+        

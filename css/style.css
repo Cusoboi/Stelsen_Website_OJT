@@ -1,0 +1,131 @@
+/* BG pic */
+.container-fluid{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+/* !BG pic! */
+
+/* Nav Bar CSS */
+@media(max-width: 767px){
+    .masthead{
+        min-height: 100vh;
+    }
+    h1{
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 56px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        overflow-y: auto;
+        background-color: #070A52;
+        padding: 0.5rem;
+    }
+    
+    .navbar-collapse.show {
+        display: block;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem;
+        color: #fff;
+    }
+    
+    .navbar-nav .nav-link.active {
+        background-color: #070A52;
+    }
+    }
+/* !Nav Bar CSS! */
+
+
+/* Upper Part CSS */
+.row{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+fieldset {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 100px;
+}
+
+/* !Upper Part CSS! */
+
+/* Table Color */
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #070A52;
+   color:#fff
+ }
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+background-color: #fff;
+  } 
+/* !Table Color! */
+
+/* Icons CSS */
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 24px 24px;
+}
+
+.notification-bar-renewal {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+.notification-bar-expired{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+a:hover {
+  color: #4A3777;
+}
+/* !Icons CSS! */
+
+#badge{
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
